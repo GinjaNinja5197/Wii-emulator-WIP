@@ -1,0 +1,55 @@
+<html>
+<head>
+
+<!--
+Work It Harder Make It Better 
+Do It Faster Makes Us stronger 
+More Than Ever Hour After 
+Our Work Is Never Over
+-->
+
+<style>
+body, html {height: 100%; background: black;}
+#outer {height: 100%; overflow: visible; display: table; position: static;}
+#middle {display: table-cell; vertical-align: middle; position: static;}
+</style>
+
+<script src="quatmath.js"></script>
+<script src="models.js"></script>
+<script src="engine.js"></script>
+<script src="skeletal.js"></script>
+
+<!-- effects -->
+<script src="placebacon.js"></script>
+<script src="wiimenu.js"></script>
+<script src="news.js"></script>
+<script src="bodytest.js"></script>
+<script src="eatbacon.js"></script>
+<script src="lens.js"></script>
+<script src="guru.js"></script>
+
+<script src="mainloop.js"></script>
+
+</head>
+
+<body onload="init()">
+
+<!-- audio tag was too slow for practical use, so going with this hack instead -->
+<embed id="player" style="position: absolute; left: 0px; top: 1000px;" 
+src="wefat.mp3" type="application/x-mplayer2" showdisplay="0" ShowControls="0" autostart="TRUE"></embed>
+
+<div id="fps" style="font-size:100%;color:grey;position:absolute;right:200px;top:20px;"></div>
+<div id="elapsed" style="font-size:100%;color:grey;position:absolute;left:200px;top:20px;"/></div>
+<center>
+	<div id="outer">
+		<div id="middle">
+			<div id="inner">
+				<canvas id="canvas" width="1280" height="720"></canvas>
+			</div>
+		</div>
+	</div>
+</center>
+<textarea id="out" style="visibility:hidden;width:800px;height:100px;">...</textarea>
+</body>
+
+</html>
